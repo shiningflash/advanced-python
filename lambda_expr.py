@@ -10,6 +10,7 @@ print(func(3))
 print(harmonic_mean(2, 4, 1))
 print(full_name('  amIrul ', '  islam'))
 
+
 # format 2
 
 def get_quadratic_function(a, b, c):

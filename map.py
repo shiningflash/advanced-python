@@ -27,7 +27,7 @@ print(areas)
 
 # CELCIUS to FARENHITE
 
-temps = [("Berlin", 29), ("New York", 28), ("London", 22)]
+temps = [("Berlin", 29), ("New York", 28), ("London", 22)] 
 
 c_to_f = lambda data: (data[0], (9/5.0)*data[1] + 32)
 
