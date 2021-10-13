@@ -1,3 +1,5 @@
+# Python Visualization
+
 ### install matplotlib
 
 ```
@@ -10,3 +12,29 @@ $ pip3 install matplotlib
 import matplotlib
 print(matplotlib._version__)
 ```
+
+---
+
+## Visualization
+
+### line
+
+![line](./images/line.png)
+
+### subplot
+
+![subplot](./images/subplot.png)
+
+### scatter
+
+![scatter](./images/scatter.png)
+
+### bar
+
+![bar](./images/bar.png)
+
+### pie chart
+
+![pie](./images/pie.png)
+
+---
