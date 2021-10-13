@@ -19,7 +19,7 @@ print(matplotlib._version__)
 
 ### line
 
-![line](./images/line.png)
+![line](./images/plot.png)
 
 ### subplot
 
