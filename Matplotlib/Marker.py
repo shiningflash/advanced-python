@@ -12,12 +12,14 @@ import numpy as np
 # marker edge color => mec = any color liretal
 # marker face color => mfc = any color liretal
 
+# line width => linewidth = any number
+
 
 def draw_diagram():
     x = np.array([1, 2, 6, 8, 10])
     y = np.array([3, 8, 1, 10, 5])
 
-    plt.plot(x, y, 'o:g', ms=12, mec='#4CAF50', mfc='#4CAF50')
+    plt.plot(x, y, 'o-.g', ms=12, mec='#4CAF50', mfc='#4CAF50', linewidth=3)
 
 
 if __name__ == '__main__':
