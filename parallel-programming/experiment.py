@@ -20,7 +20,7 @@ def how_many_within_range(row, minimum=4, maximum=8):
     return count
 
 
-# Solution without parallelization
+# 1. Solution without parallelization
 def solution1(data):
     results = []
     for row in data:
@@ -29,7 +29,7 @@ def solution1(data):
     return results
 
 
-# Paralelizing using Pool.apply()
+# 2. Paralelizing using Pool.apply()
 def solution2(data):
     pool = mp.Pool(mp.cpu_count())
     results = [
@@ -43,7 +43,7 @@ def solution2(data):
     return results
 
 
-# Parallelizing using Pool.map()
+# 3. Parallelizing using Pool.map()
 def solution3(data):
     pool = mp.Pool(mp.cpu_count())
     results = pool.map(
@@ -55,7 +55,7 @@ def solution3(data):
     return results
 
 
-# Parallelizing using Pool.starmap()
+# 4. Parallelizing using Pool.starmap()
 def solution4(data):
     pool = mp.Pool(mp.cpu_count())
     results = pool.starmap(
@@ -76,7 +76,7 @@ def how_many_within_range2(i, row, minimum, maximum):
             count += 1
     return (i, count)
 
-# Parallelizing using Pool.apply_async()
+# 5. Parallelizing using Pool.apply_async()
 def solution5(data):
     pool = mp.Pool(mp.cpu_count())
     
@@ -93,7 +93,7 @@ def solution5(data):
     print(results[:10])
 
 
-# Parallelizing using Pool.starmap_async()
+# 6. Parallelizing using Pool.starmap_async()
 def solution6(data):
     pool = mp.Pool(mp.cpu_count())
     
